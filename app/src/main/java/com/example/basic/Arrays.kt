@@ -41,7 +41,7 @@ fun main() {
     demonstrateCommonArrayPatterns()
 }
 
-fun demonstrateArrayCreation() {
+private fun demonstrateArrayCreation() {
     println("1. ARRAY CREATION:")
     
     // Using arrayOf() function
@@ -97,7 +97,7 @@ fun demonstrateArrayCreation() {
     println()
 }
 
-fun demonstrateArrayAccess() {
+private fun demonstrateArrayAccess() {
     println("2. ARRAY ACCESS AND MODIFICATION:")
     
     val numbers = arrayOf(10, 20, 30, 40, 50)
@@ -144,7 +144,7 @@ fun demonstrateArrayAccess() {
     println()
 }
 
-fun demonstrateArrayOperations() {
+private fun demonstrateArrayOperations() {
     println("3. ARRAY OPERATIONS:")
     
     val array1 = arrayOf(1, 2, 3, 4, 5)
@@ -193,7 +193,7 @@ fun demonstrateArrayOperations() {
     println()
 }
 
-fun demonstrateArrayIteration() {
+private fun demonstrateArrayIteration() {
     println("4. ARRAY ITERATION:")
     
     val fruits = arrayOf("apple", "banana", "cherry", "date", "elderberry")
@@ -251,7 +251,7 @@ fun demonstrateArrayIteration() {
     println()
 }
 
-fun demonstrateArrayTransformations() {
+private fun demonstrateArrayTransformations() {
     println("5. ARRAY TRANSFORMATIONS:")
     
     val numbers = arrayOf(1, 2, 3, 4, 5)
@@ -302,7 +302,7 @@ fun demonstrateArrayTransformations() {
     println()
 }
 
-fun demonstrateArrayFiltering() {
+private fun demonstrateArrayFiltering() {
     println("6. ARRAY FILTERING AND SEARCHING:")
     
     val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -357,7 +357,7 @@ fun demonstrateArrayFiltering() {
     println()
 }
 
-fun demonstrateMultiDimensionalArrays() {
+private fun demonstrateMultiDimensionalArrays() {
     println("7. MULTI-DIMENSIONAL ARRAYS:")
     
     // 2D Array creation
@@ -422,7 +422,7 @@ fun demonstrateMultiDimensionalArrays() {
     println()
 }
 
-fun demonstrateArrayComparison() {
+private fun demonstrateArrayComparison() {
     println("8. ARRAY COMPARISON AND SORTING:")
     
     val array1 = arrayOf(3, 1, 4, 1, 5)
@@ -475,7 +475,7 @@ fun demonstrateArrayComparison() {
     println()
 }
 
-fun demonstrateArrayUtilities() {
+private fun demonstrateArrayUtilities() {
     println("9. ARRAY UTILITIES:")
     
     val numbers = arrayOf(1, 2, 3, 4, 5)
@@ -526,7 +526,7 @@ fun demonstrateArrayUtilities() {
     println()
 }
 
-fun demonstrateCommonArrayPatterns() {
+private fun demonstrateCommonArrayPatterns() {
     println("10. COMMON ARRAY PATTERNS:")
     
     // Pattern 1: Array initialization with default values

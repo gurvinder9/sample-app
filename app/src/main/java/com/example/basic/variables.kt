@@ -108,7 +108,7 @@ fun main() {
     demonstrateBestPractices()
 }
 
-fun demonstrateScope() {
+private fun demonstrateScope() {
     val localVariable = "I'm local to this function"
     println("   Local variable: $localVariable")
 
@@ -120,7 +120,7 @@ fun demonstrateScope() {
     // blockVariable is not accessible here
 }
 
-fun demonstrateBestPractices() {
+private fun demonstrateBestPractices() {
     println("   ✓ Use 'val' by default, 'var' only when necessary")
     println("   ✓ Prefer type inference when the type is obvious")
     println("   ✓ Use meaningful variable names")

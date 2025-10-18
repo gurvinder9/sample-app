@@ -35,7 +35,7 @@ fun main() {
     demonstrateCommonPatterns()
 }
 
-fun demonstrateExplicitConversion() {
+private fun demonstrateExplicitConversion() {
     println("1. EXPLICIT TYPE CONVERSION:")
     println("   Kotlin requires explicit conversion between different numeric types")
     
@@ -77,7 +77,7 @@ fun demonstrateExplicitConversion() {
     println()
 }
 
-fun demonstrateStringToNumberConversion() {
+private fun demonstrateStringToNumberConversion() {
     println("2. STRING TO NUMBER CONVERSION:")
     
     // Basic string to number conversion
@@ -125,7 +125,7 @@ fun demonstrateStringToNumberConversion() {
     println()
 }
 
-fun demonstrateSafeConversion() {
+private fun demonstrateSafeConversion() {
     println("3. SAFE CONVERSION METHODS:")
     println("   Use safe conversion methods to avoid exceptions")
     
@@ -165,7 +165,7 @@ fun demonstrateSafeConversion() {
     println()
 }
 
-fun demonstrateNumberToStringConversion() {
+private fun demonstrateNumberToStringConversion() {
     println("4. NUMBER TO STRING CONVERSION:")
     
     // Basic number to string conversion
@@ -217,7 +217,7 @@ fun demonstrateNumberToStringConversion() {
     println()
 }
 
-fun demonstrateCharacterConversion() {
+private fun demonstrateCharacterConversion() {
     println("5. CHARACTER CONVERSION:")
     
     // Character to string conversion
@@ -263,7 +263,7 @@ fun demonstrateCharacterConversion() {
     println()
 }
 
-fun demonstrateCollectionConversion() {
+private fun demonstrateCollectionConversion() {
     println("6. COLLECTION TYPE CONVERSION:")
     
     // Array to list conversion
@@ -311,7 +311,7 @@ fun demonstrateCollectionConversion() {
     println()
 }
 
-fun demonstrateCustomConversion() {
+private fun demonstrateCustomConversion() {
     println("7. CUSTOM TYPE CONVERSION:")
     
     // Extension functions for custom conversion
@@ -358,7 +358,7 @@ fun demonstrateCustomConversion() {
     println()
 }
 
-fun demonstrateCommonPatterns() {
+private fun demonstrateCommonPatterns() {
     println("8. COMMON CONVERSION PATTERNS:")
     
     // Pattern 1: Safe parsing with default

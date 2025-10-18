@@ -35,7 +35,7 @@ fun main() {
     demonstrateTypeCheckingAndCasting()
 }
 
-fun demonstrateNumericTypes() {
+private fun demonstrateNumericTypes() {
     println("1. NUMERIC DATA TYPES:")
     println("   Kotlin provides several numeric types for different use cases")
     
@@ -67,7 +67,7 @@ fun demonstrateNumericTypes() {
     println()
 }
 
-fun demonstrateCharacterAndStringTypes() {
+private fun demonstrateCharacterAndStringTypes() {
     println("2. CHARACTER AND STRING TYPES:")
     
     // Character type
@@ -109,7 +109,7 @@ fun demonstrateCharacterAndStringTypes() {
     println()
 }
 
-fun demonstrateBooleanType() {
+private fun demonstrateBooleanType() {
     println("3. BOOLEAN TYPE:")
     
     val isTrue: Boolean = true
@@ -139,7 +139,7 @@ fun demonstrateBooleanType() {
     println()
 }
 
-fun demonstrateArrays() {
+private fun demonstrateArrays() {
     println("4. ARRAYS:")
     
     // Array creation
@@ -172,7 +172,7 @@ fun demonstrateArrays() {
     println()
 }
 
-fun demonstrateCollections() {
+private fun demonstrateCollections() {
     println("5. COLLECTIONS:")
     
     // Lists
@@ -210,7 +210,7 @@ fun demonstrateCollections() {
     println()
 }
 
-fun demonstrateNullableTypes() {
+private fun demonstrateNullableTypes() {
     println("6. NULLABLE TYPES:")
     
     // Nullable variables
@@ -253,7 +253,7 @@ fun demonstrateNullableTypes() {
     println()
 }
 
-fun demonstrateTypeConversion() {
+private fun demonstrateTypeConversion() {
     println("7. TYPE CONVERSION:")
     
     val intValue = 42
@@ -292,7 +292,7 @@ fun demonstrateTypeConversion() {
     println()
 }
 
-fun demonstrateTypeCheckingAndCasting() {
+private fun demonstrateTypeCheckingAndCasting() {
     println("8. TYPE CHECKING AND CASTING:")
     
     val anyValue: Any = "Hello World"

@@ -41,7 +41,7 @@ fun main() {
     demonstrateCommonStringPatterns()
 }
 
-fun demonstrateStringCreation() {
+private fun demonstrateStringCreation() {
     println("1. STRING CREATION AND BASICS:")
     
     // Basic string creation
@@ -80,7 +80,7 @@ fun demonstrateStringCreation() {
     println()
 }
 
-fun demonstrateStringInterpolation() {
+private fun demonstrateStringInterpolation() {
     println("2. STRING INTERPOLATION:")
     
     val name = "John"
@@ -116,7 +116,7 @@ fun demonstrateStringInterpolation() {
     println()
 }
 
-fun demonstrateStringManipulation() {
+private fun demonstrateStringManipulation() {
     println("3. STRING MANIPULATION:")
     
     val originalString = "  Hello, Kotlin!  "
@@ -167,7 +167,7 @@ fun demonstrateStringManipulation() {
     println()
 }
 
-fun demonstrateStringComparison() {
+private fun demonstrateStringComparison() {
     println("4. STRING COMPARISON:")
     
     val string1 = "Hello"
@@ -209,7 +209,7 @@ fun demonstrateStringComparison() {
     println()
 }
 
-fun demonstrateStringSearching() {
+private fun demonstrateStringSearching() {
     println("5. STRING SEARCHING AND FILTERING:")
     
     val text = "Hello, World! Welcome to Kotlin programming."
@@ -256,7 +256,7 @@ fun demonstrateStringSearching() {
     println()
 }
 
-fun demonstrateStringFormatting() {
+private fun demonstrateStringFormatting() {
     println("6. STRING FORMATTING:")
     
     val name = "John"
@@ -305,7 +305,7 @@ fun demonstrateStringFormatting() {
     println()
 }
 
-fun demonstrateMultiLineStrings() {
+private fun demonstrateMultiLineStrings() {
     println("7. MULTI-LINE STRINGS:")
     
     // Basic multi-line string
@@ -366,7 +366,7 @@ fun demonstrateMultiLineStrings() {
     println()
 }
 
-fun demonstrateStringRegex() {
+private fun demonstrateStringRegex() {
     println("8. STRING REGULAR EXPRESSIONS:")
     
     val text = "Contact us at support@example.com or call +1-555-123-4567"
@@ -428,7 +428,7 @@ fun demonstrateStringRegex() {
     println()
 }
 
-fun demonstrateStringCollections() {
+private fun demonstrateStringCollections() {
     println("9. STRING COLLECTIONS AND TRANSFORMATIONS:")
     
     val words = listOf("apple", "banana", "cherry", "date", "elderberry")
@@ -485,7 +485,7 @@ fun demonstrateStringCollections() {
     println()
 }
 
-fun demonstrateCommonStringPatterns() {
+private fun demonstrateCommonStringPatterns() {
     println("10. COMMON STRING PATTERNS:")
     
     // Pattern 1: Input validation
