@@ -217,9 +217,9 @@ open class Vehicle(
 }
 
 /*
- * Child class: Car
+ * Child class: InheritedCar
  */
-class Car(
+class InheritedCar(
     brand: String,
     model: String,
     year: Int,
@@ -410,7 +410,7 @@ class Manager(
  * The 'super' keyword is used to call parent class methods
  * Useful when you want to extend (not replace) parent behavior
  */
-open class Shape(val name: String) {
+open class InheritedShape(val name: String) {
     
     open fun draw() {
         println("✏️  Drawing a $name...")
@@ -424,7 +424,7 @@ open class Shape(val name: String) {
 class ColoredShape(
     name: String,
     val color: String
-) : Shape(name) {
+) : InheritedShape(name) {
     
     override fun draw() {
         // Call parent's draw method first
@@ -537,7 +537,7 @@ fun main() {
     println("EXAMPLE 2: Vehicle Hierarchy 🚗")
     println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     
-    val car = Car("Toyota", "Camry", 2023, 4)
+    val car = InheritedCar("Toyota", "Camry", 2023, 4)
     car.displayInfo()
     println()
     car.start()         // Overridden
@@ -595,7 +595,7 @@ fun main() {
     println("EXAMPLE 4: Using 'super' Keyword")
     println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
     
-    val shape = Shape("Circle")
+    val shape = InheritedShape("Circle")
     shape.draw()
     shape.describe()
     

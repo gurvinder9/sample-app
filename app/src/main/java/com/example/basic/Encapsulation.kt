@@ -210,7 +210,7 @@ class Student(
  * Kotlin provides a shorthand for getters and setters
  * This is another way to achieve encapsulation
  */
-class Car(
+class EncapsulatedCar(
     private val brand: String,
     private val model: String,
     initialSpeed: Int = 0
@@ -503,7 +503,7 @@ fun main() {
     println("EXAMPLE 4: Car Class")
     println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     
-    val car = Car("Toyota", "Camry")
+    val car = EncapsulatedCar("Toyota", "Camry")
     car.displayCarInfo()
     
     println("\nTrying to accelerate without starting engine:")

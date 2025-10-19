@@ -40,7 +40,7 @@ class Person {
  * 'val' makes the property read-only (immutable)
  * 'var' makes the property mutable
  */
-class Student(val name: String, var grade: Int) {
+class BasicStudent(val name: String, var grade: Int) {
     // Init block runs when object is created
     init {
         println("Student $name created with grade $grade")
@@ -120,7 +120,7 @@ class Rectangle(val width: Double, val height: Double) {
  * By default, classes are final (cannot be inherited)
  * PROTECTED members are accessible in the class and subclasses
  */
-open class Animal(protected val name: String, protected var age: Int) {
+open class BasicAnimal(protected val name: String, protected var age: Int) {
     // PROTECTED - accessible in this class and subclasses
     protected fun sleep() {
         println("$name is sleeping")
@@ -137,8 +137,8 @@ open class Animal(protected val name: String, protected var age: Int) {
     }
 }
 
-// Dog inherits from Animal
-class Dog(name: String, age: Int, private val breed: String) : Animal(name, age) {
+// BasicDog inherits from BasicAnimal
+class BasicDog(name: String, age: Int, private val breed: String) : BasicAnimal(name, age) {
     // Override function from parent class
     override fun makeSound() {
         println("$name barks: Woof! Woof!")
@@ -235,7 +235,7 @@ internal class InternalHelper {
  * Can have abstract members (must be implemented by subclasses)
  * Can have concrete members (with implementation)
  */
-abstract class Shape {
+abstract class BasicShape {
     abstract val name: String
     abstract fun calculateArea(): Double
     
@@ -245,7 +245,7 @@ abstract class Shape {
     }
 }
 
-class Circle(val radius: Double) : Shape() {
+class BasicCircle(val radius: Double) : BasicShape() {
     override val name: String = "Circle"
     
     override fun calculateArea(): Double {
@@ -253,7 +253,7 @@ class Circle(val radius: Double) : Shape() {
     }
 }
 
-class Square(val side: Double) : Shape() {
+class BasicSquare(val side: Double) : BasicShape() {
     override val name: String = "Square"
     
     override fun calculateArea(): Double {
@@ -374,7 +374,7 @@ fun main() {
     
     // 2. Primary Constructor
     println("\n--- Primary Constructor ---")
-    val student = Student("Bob", 85)
+    val student = BasicStudent("Bob", 85)
     student.displayInfo()
     // student.name = "Robert" // Error: val cannot be reassigned
     student.grade = 90 // OK: var can be reassigned
@@ -398,7 +398,7 @@ fun main() {
     
     // 5. Inheritance and Protected
     println("\n--- Inheritance and Protected ---")
-    val dog = Dog("Buddy", 3, "Golden Retriever")
+    val dog = BasicDog("Buddy", 3, "Golden Retriever")
     dog.displayInfo()
     dog.makeSound()
     dog.play()
@@ -432,8 +432,8 @@ fun main() {
     
     // 10. Abstract Class
     println("\n--- Abstract Class ---")
-    val circle = Circle(5.0)
-    val square2 = Square(4.0)
+    val circle = BasicCircle(5.0)
+    val square2 = BasicSquare(4.0)
     circle.describe()
     square2.describe()
     
