@@ -246,9 +246,9 @@ private fun demonstrateRemovingElements() {
     val list4 = arrayListOf("a", "b", "c", "d", "e")
     println("   Removing first and last:")
     println("   Original: $list4")
-    list4.removeFirst()
+    list4.removeAt(0)
     println("   After removeFirst(): $list4")
-    list4.removeLast()
+    list4.removeAt(list4.size - 1)
     println("   After removeLast(): $list4")
     
     // Retaining elements

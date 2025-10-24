@@ -5,12 +5,14 @@
  * and how to use them effectively.
  */
 
+ const val PI = 3.144
 fun main() {
     println("=== Kotlin Variables Tutorial ===\n")
 
     // 1. VARIABLE DECLARATION
     println("1. Variable Declaration:")
     println("   Variables in Kotlin are declared using 'var' (mutable) or 'val' (immutable)")
+    println("PI is $PI")
 
     // 2. MUTABLE VARIABLES (var)
     println("\n2. Mutable Variables (var):")
